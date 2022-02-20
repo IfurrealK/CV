@@ -45,12 +45,6 @@ body {
   color: #fff;
 }
 
-/* .container .aside img {
-  display: block;
-  width: 100%;
-  margin-bottom: 40px;
-} */
-
 .container .aside .education {
   margin-top: 90px;
   margin-left: 40px;
@@ -117,13 +111,13 @@ body {
   color: #fff;
 }
 
-.container .aside .contacts__phone, .container .aside .contacts__telegram, .container .aside .contacts__e-mail {
+.container .aside .contacts__phone, .container .aside .contacts__telegram, .container .aside .contacts__e-mail, .container .aside .contacts__tel {
   position: relative;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-.container .aside .contacts__phone::before, .container .aside .contacts__telegram::before, .container .aside .contacts__e-mail::before {
+.container .aside .contacts__phone::before, .container .aside .contacts__telegram::before, .container .aside .contacts__e-mail::before, .container .aside .contacts__tel::before {
   content: '';
   display: block;
   height: 30px;
@@ -136,7 +130,7 @@ body {
   transition: 0.5s all;
 }
 
-.container .aside .contacts__phone:hover::before, .container .aside .contacts__telegram:hover::before, .container .aside .contacts__e-mail:hover::before {
+.container .aside .contacts__phone:hover::before, .container .aside .contacts__telegram:hover::before, .container .aside .contacts__e-mail:hover::before, .container .aside .contacts__tel:hover::before {
   width: 55px;
 }
 
@@ -177,10 +171,6 @@ body {
 
 .container .aside .skills__github {
   background-image: url("../img/icons/git-seeklogo.com.svg");
-}
-
-.container .aside .skills__figma {
-  background-image: url("../img/icons/figma-1.svg");
 }
 
 .main {
@@ -233,8 +223,8 @@ body {
  }
 
  .avatar {
-  margin-top: 3px;
-  margin-left: 28px;
+  margin-top: -3px;
+  margin-left:-2px;
 
 } 
 
@@ -296,46 +286,12 @@ body {
   color: #2d2d2d;
 }
 
-/* .main__wrapper .about .quote::before {
-  content: '';
-  display: block;
-  width: 5px;
-  height: 32px;
-  position: absolute;
-  left: -60px;
-  top: -2px;
-  background-color: #fecb00;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.main__wrapper .about .quote::after {
-  content: '';
-  display: block;
-  width: 5px;
-  height: 32px;
-  position: absolute;
-  right: -60px;
-  top: -2px;
-  background-color: #fecb00;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.main__wrapper .about .quote:hover::before {
-  width: 250px;
-} */
-
-/* .main__wrapper .about .quote:hover::after {
-  width: 250px;
-} */
-
-.main__wrapper .code-example {
-  line-height: 20px;
+.main__wrapper .cover_letter {
+  line-height: 30px;
   margin-top: 60px;
 }
 
-.main__wrapper .code-example code {
+.main__wrapper .cover_letter code {
   position: relative;
   left: -200px;
 }
@@ -374,17 +330,6 @@ body {
   justify-content: space-around;
 }
 
-/* .main .footer div {
-  height: 100px;
-} */
-
-.main .footer .github img {
-  display: block;
-  margin: 0 auto;
-  height: 45px;
-  width: 45px;
-} 
-
 .main .footer .date {
   font-size: 30px;
   font-weight: 600;
@@ -407,38 +352,3 @@ body {
   background-color: #2d2d2d;
   margin: 20px 0px;
 }
-.github {
-  margin-top: -5px;
-  width: 75px;
-  height: 75px;
-}
-/* 
-.main .footer .logo{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 500%;
-  position: relative;
-  margin: center;
-} */
-.logo {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  margin-top: -5px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #18806e
-}
-
-.main .footer .emblem img{
-  width: 35px;
-  height: 45px;
-  align-self: center;
-  margin-left: 5px;
-} 
-/* 
-.main .footer .logo {
-  color: #18806e
-} */
