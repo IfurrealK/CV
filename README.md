@@ -1,1 +1,1 @@
-https://IfurrealK.github.io/CV/
+https://IfurrealK.github.io/CV/ 
