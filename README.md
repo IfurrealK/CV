@@ -1,1 +1,1 @@
-# CV
+https://IfurrealK.github.io/CV/
