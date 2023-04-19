@@ -15,6 +15,7 @@
 }
 
 h2 {
+  text-shadow:rgb(78, 76, 70) 2px 0 1px;
   font-family: 'ComicSansMSBold';
   font-size: 30px;
   font-weight: 600;
@@ -67,16 +68,50 @@ body {
 .container .aside .education__place {
   font-style: italic;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .container .aside .clarification {
   padding-left: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color:#fefa00;
 }
 
+.container .aside .specialization {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color:#fefa00;
+}
+
+.container .aside .specialization a {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+}
+
+.container .aside .specialization a::before {
+  content: '';
+  display: block;
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: -65px;
+  top: -6px;
+  background-color: #fefa00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .aside .specialization a:hover {
+  font-size: 20px;
+  color: #fff;
+}
+
+.container .aside .specialization a:hover::before {
+  width: 55px;
+}
 .container .aside .clarification a {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -86,7 +121,7 @@ body {
 .container .aside .clarification a::before {
   content: '';
   display: block;
-  height: 30px;
+  height: 36px;
   width: 2px;
   position: absolute;
   left: -65px;
@@ -97,7 +132,7 @@ body {
 }
 
 .container .aside .clarification a:hover {
-  font-size: 19px;
+  font-size: 21px;
   color: #fff;
 }
 
@@ -253,11 +288,15 @@ body {
 }
 
 .main .header .name span {
+  color:#110c2bca;
+  text-shadow:rgb(72, 68, 52) 0px 0 1px;
   font-family: 'ComicSansMSBold';
   font-weight: 600;
 }
 
 .main .header .prof {
+  color:#110c2bca;
+  text-shadow:rgb(72, 68, 52) 1px 0 1px;
   font-family: 'ComicSansMSBold';
   font-style: italic;
   text-align: center;
@@ -267,6 +306,11 @@ body {
 
 .main__wrapper {
   padding: 0px 60px;
+}
+
+.main__wrapper .about .main_parts, .main__wrapper .cover_letter .main_parts {
+  color:#110c2bca;
+  text-shadow:rgb(127, 122, 102) 1px 0 1px;
 }
 
 .main__wrapper .about {
