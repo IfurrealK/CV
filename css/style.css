@@ -4,15 +4,25 @@
           box-sizing: border-box;
 }
 
+@font-face { 
+  font-family: "ComicSansMSBold";
+  src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot");
+  src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ComicSansMSBold/ComicSansMSBold.woff") format("woff"),
+  url("../fonts/ComicSansMSBold/ComicSansMSBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
 h2 {
-  font-family: cursive;
+  font-family: 'ComicSansMSBold';
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h3 {
-  font-family: cursive;
+  font-family: 'ComicSansMSBold';
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
@@ -55,6 +65,7 @@ body {
 }
 
 .container .aside .education__place {
+  font-style: italic;
   font-weight: 500;
   font-size: 20px;
 }
@@ -100,6 +111,7 @@ body {
 }
 
 .container .aside .contacts__wrapper {
+  font-style: italic;
   padding-left: 20px;
   list-style: none;
 }
@@ -142,6 +154,7 @@ body {
 }
 
 .container .aside .skills__list {
+  font-style: italic;
   list-style: none;
   padding: 0;
   color: #fefa00;
@@ -182,7 +195,6 @@ body {
 
 .main {
   width: 70%;
-  font-family: Helvetica, sans-serif;
   border-radius: 25px;
   margin-left: 15px;
   color: #14112b;
@@ -241,12 +253,13 @@ body {
 }
 
 .main .header .name span {
-  font-family: cursive;
+  font-family: 'ComicSansMSBold';
   font-weight: 600;
 }
 
 .main .header .prof {
-  font-family: cursive;
+  font-family: 'ComicSansMSBold';
+  font-style: italic;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -264,26 +277,26 @@ body {
 }
 
 .main__wrapper .about__descr {
+  font-style: italic;
   text-align: justify;
 }
 
-.main__wrapper .about__strengths {
-  padding: 0;
-  list-style: circle;
+.main__wrapper .about__strengths, .main__wrapper .about__languages {
+  font-style: italic;
+  padding:0;
+  list-style: none;
 }
-
-.main__wrapper .about__strengths li {
-  margin-left: 40px;
+.main__wrapper .about__strengths li:before, .main__wrapper .about__languages li:before {
+  padding-right:10px;
+  font-weight: bold;
+  color: #d8d5db;
+  content: "\2714";
+  transition-duration: 0.5s;
 }
-
-.main__wrapper .about__languages {
-  padding: 0;
-  list-style: circle;
-}
-
-.main__wrapper .about__languages li {
-  margin-left: 40px;
-}
+.main__wrapper .about__strengths li:hover:before, .main__wrapper .about__languages li:hover:before {
+  color: #fefa00;
+  content: "\2714";
+}   
 
 .main__wrapper .about .quote {
   text-align: center;
@@ -343,7 +356,7 @@ body {
 }
 
 .main .footer .date {
-  font-family: cursive;
+  font-family: 'ComicSansMSBold';
   font-size: 35px;
   font-weight: 600;
   margin-top: -45px;
