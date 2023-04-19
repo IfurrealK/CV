@@ -152,6 +152,10 @@ body {
   background-position: left center;
 }
 
+.container .aside .skills__sql {
+  background-image: url("../img/icons/mysql.svg");
+}
+
 .container .aside .skills__html {
   background-image: url("../img/icons/html.svg");
 }
